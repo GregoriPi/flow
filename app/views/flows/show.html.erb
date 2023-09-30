@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @flow %>
+
+<div>
+  <%= link_to "Edit this flow", edit_flow_path(@flow) %> |
+  <%= link_to "Back to flows", flows_path %>
+
+  <%= button_to "Destroy this flow", @flow, method: :delete %>
+</div>

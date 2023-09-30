@@ -1,0 +1,10 @@
+<div id="<%= dom_id flow %>" class="item-container">
+  <p>
+    <strong>Item:</strong>
+    <%= flow.item %>
+  </p>
+  <p class="value-container">
+    <strong>Value:</strong>
+    <%= number_to_currency(flow.value, unit: "R$", separator: ",", delimiter: ".") %>
+  </p>
+</div>
