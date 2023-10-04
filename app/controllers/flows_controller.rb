@@ -22,7 +22,7 @@ class FlowsController < ApplicationController
   # POST /flows or /flows.json
   def create
     @flow = Flow.new(flow_params)
-
+    @flow.user = User.first
     respond_to do |format|
       if @flow.save
         format.html { redirect_to flow_url(@flow), notice: "Flow was successfully created." }
