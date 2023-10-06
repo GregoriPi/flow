@@ -5,6 +5,7 @@
 <div id="flows">
   <% @flows.each do |flow| %>
     <%= render flow %>
+    by <%= flow.user.username if flow.user %>
     <p>
       <%= link_to "Show this flow", flow %>
     </p>
